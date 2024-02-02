@@ -1,0 +1,17 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="start center">
+  <img class="imagen" src="assets/logo.png" alt="Coordinación Estatal Protección Civil">
+  <h1 class="titulo">C. E. Protección Civil</h1>
+  <span class="example-spacer"></span>
+  <button mat-button color="primary" (click)="agregarUbicacion()">Agregar</button>
+  <button mat-button (click)="cerrar()">Cerrar sesión</button>
+</mat-toolbar>
+
+<mat-sidenav-container class="app-container">
+  <mat-sidenav-content fxFlex>
+    <router-outlet>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

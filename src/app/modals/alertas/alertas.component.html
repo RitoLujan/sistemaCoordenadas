@@ -1,0 +1,18 @@
+
+<div *ngIf="warning">
+    <div mat-dialog-content class="warning">
+        <h1> <mat-icon class="icono" aria-hidden="false" fontIcon="warning"></mat-icon>{{data.titulo}}</h1>
+    </div>
+</div>
+
+<div *ngIf="info">
+    <div mat-dialog-content class="info">
+        <h1> <mat-icon class="icono" aria-hidden="false" fontIcon="info"></mat-icon>{{data.titulo}}</h1>
+    </div>
+</div>
+
+<div *ngIf="success">
+    <div mat-dialog-content class="success">
+        <h1> <mat-icon class="icono" aria-hidden="false" fontIcon="check"></mat-icon>{{data.titulo}}</h1>
+    </div>
+</div>

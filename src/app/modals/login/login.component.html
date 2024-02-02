@@ -1,0 +1,24 @@
+<h1 mat-dialog-title >{{data.titulo}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="loginForm">
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Usuario</mat-label>
+      <input matInput formControlName="usuario" required>
+      <mat-error *ngIf="loginForm.get('usuario')?.hasError('required')">
+        * Campo Requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Contraseña</mat-label>
+      <input type="password" matInput formControlName="contrasena" required>
+      <mat-error *ngIf="loginForm.get('contrasena')?.hasError('required')">
+        * Campo Requerido
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<mat-dialog-actions [attr.align]="'center'">
+    <button mat-raised-button color="primary" (click)="ingresar()">{{data.accion}}</button>
+    <button mat-button mat-dialog-close>Cerrar</button>
+  </mat-dialog-actions>

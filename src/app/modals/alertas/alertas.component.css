@@ -1,0 +1,23 @@
+.info {
+    background-color: #6578e4ee ;
+    color: #fff;
+}
+
+.warning{
+    background-color: #d14652ee ;
+    color: #fff;
+}
+
+.success{
+    background-color: #7ac747ee ;
+    color: #fff;
+}
+
+h1{
+    font-size: 14px;
+}
+
+.icono {
+    margin-bottom: -10px;
+    font-size: 18px;
+}

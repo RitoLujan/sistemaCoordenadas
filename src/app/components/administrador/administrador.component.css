@@ -1,0 +1,47 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#map {
+  height: 100%;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.titulo {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 18px; 
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo {
+    display: none;
+  }
+}
+
+.imagen{
+  width: 30px; 
+  height: 30px; 
+}
+
+.boton {
+  font-size: 16px;
+}
+
+.app-container {
+  height: 90%;
+  margin: 0;
+}
+

@@ -1,0 +1,47 @@
+    .map-container {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    #map {
+      height: 100%;
+    }
+
+    .example-spacer {
+      flex: 1 1 auto;
+    }
+
+    .boton {
+      font-size: 15px;
+      margin-bottom: 15px;
+      margin-left: 15px;
+    }
+
+    .titulo {
+      font-size: 24px;
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .titulo {
+        font-size: 18px;
+      }
+
+      .boton {
+        margin-bottom: 5px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .titulo {
+        display: none;
+      }
+
+      .boton {
+        margin-bottom: 5px;
+      }
+    }
